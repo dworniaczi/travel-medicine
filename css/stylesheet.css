@@ -1,0 +1,41 @@
+/* Web Fonts -------------- */
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+/* Universal Selectors ------------ */
+* {
+    box-sizing: border-box;
+}
+
+/* Class Selectors -------------- */
+.main-header {
+    padding-top: 200px;
+    height: 750px;
+    background: 
+                /* linear-gradient(#0177a7, transparent 80%), */
+                /* linear-gradient(0deg, #3a2824, transparent 80%), */
+                url("../img/main-header-photo-boat.jpg") no-repeat bottom;
+    background-size: cover;
+}
+
+.main-header,
+.tips,
+.offer,
+.contact,
+.main-footer {
+    text-align: center;}
+
+/* ID Selectors -------------- */
+/* Type Selectors -------------- */
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 10rem;
+    font-family: "Teko";
+    font-weight: 600;
+    letter-spacing: 0.8rem;
+    margin: 0;
+}
+
