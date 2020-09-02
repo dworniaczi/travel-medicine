@@ -8,16 +8,18 @@
 
 /* Class Selectors -------------- */
 .main-header {
-    padding-top: 200px;
+    padding-top: 20px;
     height: 750px;
     background: 
-                /* linear-gradient(#0177a7, transparent 80%), */
-                /* linear-gradient(0deg, #3a2824, transparent 80%), */
-                url("../img/main-header-photo-boat.jpg") no-repeat bottom;
+                linear-gradient(-190deg, #51cac8, transparent 40%),
+                linear-gradient(10deg, #bb967b, transparent 40%),
+                url("../img/main-header-photo-beach.jpg") no-repeat center;
     background-size: cover;
+    text-align: center;
 }
 
 .main-header,
+.subtitle,
 .tips,
 .offer,
 .contact,
@@ -36,6 +38,23 @@ h1 {
     font-family: "Teko";
     font-weight: 600;
     letter-spacing: 0.8rem;
-    margin: 0;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;;
+    right: 0;
+}
+
+ .subtitle {
+    font-size: 3rem;
+    font-family: "Teko";
+    font-weight: 300;
+    font-style: italic;
+}
+
+.nav-bar
+li {
+    list-style-type: none;
+    display: inline-block;
 }
 
