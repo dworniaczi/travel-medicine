@@ -1,5 +1,6 @@
 /* Web Fonts -------------- */
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /* Universal Selectors ------------ */
 * {
@@ -12,7 +13,7 @@
     height: 750px;
     background: 
                 linear-gradient(-190deg, #51cac8, transparent 40%),
-                linear-gradient(10deg, #bb967b, transparent 40%),
+                linear-gradient(0deg, #eae2db, transparent 40%),
                 url("../img/main-header-photo-beach.jpg") no-repeat center;
     background-size: cover;
     text-align: center;
@@ -24,12 +25,60 @@
 .offer,
 .contact,
 .main-footer {
-    text-align: center;}
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 3rem;
+    font-family: "Teko";
+    font-weight: 300;
+    font-style: italic;
+}
+
+.nav-bar
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.main-footer {
+    font-family: "Montserrat";
+    border-top: solid 1.5px #02515E;
+}
+
+.certyficate {
+    margin-top: 0;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.register {
+    font-size: 1.5rem;
+}
+
+.phone-num {
+    font-size: 1.5rem;
+}
+
+.adress {
+    font-size: 1.5rem;
+}
+
+.adress-list {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+}
 
 /* ID Selectors -------------- */
 /* Type Selectors -------------- */
 
 body {
+    background-color: #eae2db;
     margin: 0;
 }
 
@@ -43,18 +92,23 @@ h1 {
     bottom: 0;
     left: 0;;
     right: 0;
+    color: #02515E;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.8);
 }
 
- .subtitle {
-    font-size: 3rem;
+h2 {
+    font-size: 3.5rem;
     font-family: "Teko";
-    font-weight: 300;
-    font-style: italic;
+    margin: 0;
+    color: #02515E;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.2rem;
 }
 
-.nav-bar
-li {
-    list-style-type: none;
-    display: inline-block;
+p {
+    font-family: "Montserrat";
+    font-size: 1 rem;
+    font-weight: 500;
 }
+
 
