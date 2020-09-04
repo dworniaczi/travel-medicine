@@ -16,7 +16,7 @@
                 linear-gradient(0deg, #eae2db, transparent 40%),
                 url("../img/main-header-photo-beach.jpg") no-repeat center;
     background-size: cover;
-    text-align: center;
+    position: relative;
 }
 
 .main-header,
@@ -38,7 +38,6 @@
 .nav-bar
 li {
     list-style-type: none;
-    display: inline-block;
 }
 
 .main-footer {
@@ -72,6 +71,12 @@ li {
     font-weight: 500;
     list-style: none;
     line-height: 2rem;
+}
+
+.tips {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ID Selectors -------------- */
