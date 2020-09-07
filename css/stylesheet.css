@@ -97,10 +97,12 @@ li {
 }
 
 .container-table {
-    padding-top: 50px;
+    display: none;
+    padding-top: 16px;
+    padding-bottom: 50px;
 }
 
-.table-prizes {
+.table-prices {
     font-family: "Montserrat";
     font-weight: 600;
     font-size: 1rem;
@@ -114,12 +116,33 @@ li {
 }
 
 .container-contact {
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
-.img-syringe-icon {
-    padding-top: 15px;
-    padding-left: 10px;
+.button-prices {
+    font-family: "Montserrat";
+    font-weight: 600;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #02515E;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    color:#02515E;
+    text-align:center;
+    transition: all 0.2s;
+    background-color: #eae2db;
+}
+
+.button-prices:hover {
+    color:#eae2db;
+    background-color:#02515E;
+}
+
+.button-prices:focus {
+    outline: 0;
 }
 
 /* ID Selectors -------------- */
