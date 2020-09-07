@@ -55,15 +55,9 @@ li {
     padding-bottom: 130px;
 }
 
-.register {
-    font-size: 1.5rem;
-}
-
-.phone-num {
-    font-size: 1.5rem;
-}
-
-.adress {
+.register,
+.phone-num,
+.address {
     font-size: 1.5rem;
 }
 
@@ -98,8 +92,34 @@ li {
 }
 
 .container-offer {
-    /* background-image: url("../img/syringe-background.png");
-    background-size: contain; */
+    background-image: url("../img/syringe-background.png");
+    background-size: contain;
+}
+
+.container-table {
+    padding-top: 50px;
+}
+
+.table-prizes {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 1rem;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vax-price {
+    text-align: center;
+}
+
+.container-contact {
+    padding-top: 50px;
+}
+
+.img-syringe-icon {
+    padding-top: 15px;
+    padding-left: 10px;
 }
 
 /* ID Selectors -------------- */
@@ -135,8 +155,28 @@ h2 {
 
 p {
     font-family: "Montserrat";
-    font-size: 1 rem;
+    font-size: 1rem;
     font-weight: 600;
+}
+
+th, 
+td {
+    height: 1.5rem;
+    padding: 12px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 2px solid #02515E;
+}
+
+th {
+    font-size: 1.25rem;
 }
 
 
