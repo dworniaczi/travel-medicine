@@ -54,7 +54,13 @@ li {
     font-size: 1rem;
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
+}
+
+@media (min-width: 1920px) {
+    .certificate {
+        padding-bottom: 120px;
+    }
 }
 
 .register,
@@ -165,6 +171,44 @@ li {
     color: #02515E;
     cursor: pointer;
 }
+
+.container-images {
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.images {
+    height: 100%;
+    width: 25%;
+    float: left;
+    background-size: cover;
+}
+
+@media (min-width: 1600px) {
+    .images {
+        height: 100%;
+    }
+    .container-images {
+        height: 250px;
+    }
+}
+
+.container-images .images:nth-child(1) {
+    background-image: url("../img/austria-lake-photo.jpg");
+} 
+
+.container-images .images:nth-child(2) {
+    background-image: url("../img/italy-sea-photo.jpg");
+} 
+
+.container-images .images:nth-child(3) {
+    background-image: url("../img/bali-palmtree-photo.jpg");
+} 
+
+.container-images .images:nth-child(4) {
+    background-image: url("../img/usa-nortshore-photo.jpg");
+} 
 
 
 /* ID Selectors -------------- */
