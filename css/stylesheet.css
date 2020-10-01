@@ -9,7 +9,6 @@
 
 /* Class Selectors -------------- */
 .main-header {
-    padding-top: 20px;
     height: 750px;
     background: 
                 linear-gradient(-190deg, #51cac8, transparent 40%),
@@ -29,16 +28,35 @@
 }
 
 .subtitle {
+    padding-top: 40px;
     font-size: 3rem;
     font-family: "Teko";
     font-weight: 300;
     font-style: italic;
 }
 
-.nav-bar
-li {
-    display: inline;
-    list-style-type: none;
+.navigation {
+    width: 100%;
+    background-color: #02515E;
+    text-align: center;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 5px 0px;
+    margin: 0px 110px;
+} 
+
+.nav-bar li a {
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f39921;
+}
+
+.nav-bar li a:hover {
+    color: #3FAFB0;
 }
 
 .main-footer {
@@ -208,7 +226,7 @@ li {
 
 .container-images .images:nth-child(4) {
     background-image: url("../img/usa-nortshore-photo.jpg");
-} 
+}
 
 
 /* ID Selectors -------------- */
@@ -248,6 +266,12 @@ p {
     font-weight: 600;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 th, 
 td {
     height: 1.5rem;
@@ -267,5 +291,3 @@ td {
 th {
     font-size: 1.25rem;
 }
-
-
