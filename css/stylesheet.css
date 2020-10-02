@@ -44,7 +44,7 @@
 .nav-bar li {
     display: inline-block;
     padding: 5px 0px;
-    margin: 0px 110px;
+    margin: 0px 70px;
 } 
 
 .nav-bar li a {
@@ -61,7 +61,17 @@
 
 .main-footer {
     font-family: "Montserrat";
-    border-top: solid 1.5px #02515E;
+    background-color:  #02515E;
+    color: #f39921;
+}
+
+.main-footer a {
+    text-decoration: none;
+    color:  #f39921;
+}
+
+.main-footer a:hover {
+    color:  #3FAFB0;
 }
 
 .certificate {
@@ -244,7 +254,7 @@ h1 {
     letter-spacing: 0.8rem;
     margin: 0 auto;
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 0;;
     right: 0;
     color: #02515E;
