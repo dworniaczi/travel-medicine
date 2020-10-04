@@ -36,6 +36,9 @@
 }
 
 .navigation {
+    position: fixed;
+    top: 0;
+    z-index: 1;
     width: 100%;
     background-color: #02515E;
     text-align: center;
@@ -237,13 +240,25 @@
     background-image: url("../img/usa-nortshore-photo.jpg");
 }
 
-.tips-top-photo {
+.top-photo {
     height: 400px;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.tips-top-photo {
     background-image: url("../img/house-on-lake-photo.jpg");
+    background-position: right;
+}
+
+.vaccination-top-photo {
+    background-image: url("../img/sunset-palmtrees-photo.jpg");
+}
+
+.offer-top-photo {
+    background-image: url("../img/african-road-photo.jpg");
 }
 
 
