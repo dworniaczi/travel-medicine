@@ -10,7 +10,7 @@
 /* Class Selectors -------------- */
 .main-header {
     height: 750px;
-    background: 
+    background:
                 linear-gradient(-190deg, #51cac8, transparent 40%),
                 linear-gradient(0deg, #eae2db, transparent 40%),
                 url("../img/main-header-photo-beach.jpg") no-repeat center;
@@ -28,7 +28,7 @@
 }
 
 .subtitle {
-    padding-top: 40px;
+    padding-top: 30px;
     font-size: 3rem;
     font-family: "Teko";
     font-weight: 300;
@@ -36,6 +36,7 @@
 }
 
 .navigation {
+    display: none;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -48,7 +49,7 @@
     display: inline-block;
     padding: 5px 0px;
     margin: 0px 70px;
-} 
+}
 
 .nav-bar li a {
     text-decoration: none;
@@ -60,6 +61,17 @@
 
 .nav-bar li a:hover {
     color: #3FAFB0;
+}
+
+.hamburger-icon {
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    z-index: 1;
+    height: 45px;
+    width: 45px;
+    background-image: url("../img/menu.png");
+    background-repeat: no-repeat;
 }
 
 .main-footer {
@@ -113,7 +125,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-    
+
 
 .container {
     width: 100%;
@@ -133,10 +145,6 @@
 .container-offer {
     background-image: url("../img/syringe-background.png");
     background-size: contain;
-}
-
-.container-table {
-    /* padding: 16px 0px; */
 }
 
 .table-prices {
@@ -226,15 +234,15 @@
 
 .container-images .images:nth-child(1) {
     background-image: url("../img/austria-lake-photo.jpg");
-} 
+}
 
 .container-images .images:nth-child(2) {
     background-image: url("../img/italy-sea-photo.jpg");
-} 
+}
 
 .container-images .images:nth-child(3) {
     background-image: url("../img/bali-palmtree-photo.jpg");
-} 
+}
 
 .container-images .images:nth-child(4) {
     background-image: url("../img/usa-nortshore-photo.jpg");
@@ -261,6 +269,17 @@
     background-image: url("../img/african-road-photo.jpg");
 }
 
+.subpage-section-title {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Teko";
+    font-weight: 300;
+    color: #02515E;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.1rem;
+    margin: 32px;
+}
+
 .table-title {
     text-align: center;
     font-size: 3rem;
@@ -278,7 +297,221 @@
     margin-bottom: 32px;
 }
 
+.continent-icon {
+    display: inline-block;
+    height: 128px;
+    width: 128px;
+    margin: 0px 30px;
+}
 
+.europe-icon {
+    background-image: url("../img/europe.png");
+}
+
+.europe-icon:hover {
+    background-image: url("../img/europe-hover.png");
+}
+
+.africa-icon {
+    background-image: url("../img/africa.png");
+}
+
+.africa-icon:hover {
+    background-image: url("../img/africa-hover.png");
+}
+
+.asia-icon {
+    background-image: url("../img/asia.png");
+}
+
+.asia-icon:hover {
+    background-image: url("../img/asia-hover.png");
+}
+
+.australia-icon {
+    background-image: url("../img/australia.png");
+}
+
+.australia-icon:hover {
+    background-image: url("../img/australia-hover.png");
+}
+
+.south-america-icon {
+    background-image: url("../img/south-america.png");
+}
+
+.south-america-icon:hover {
+    background-image: url("../img/south-america-hover.png");
+}
+
+.north-america-icon {
+    background-image: url("../img/north-america.png");
+}
+
+.north-america-icon:hover {
+    background-image: url("../img/north-america-hover.png");
+}
+
+/* Menu button style and animation */
+
+.btn {
+    position: fixed;
+    top: 9%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    cursor: pointer;
+}
+
+span {
+    display: block;
+    width: 100%;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 3px;
+    height: 6px;
+    background: #f39921;
+    transition: all .3s;
+    position: relative;
+    float: left;
+}
+
+.btn span:nth-child(2) {
+    width: 75%;
+    float: right;
+}
+
+span + span {
+    margin-top: 7px;
+}
+
+.active span:nth-child(1) {
+    animation: ease .7s top forwards;
+}
+
+.not-active span:nth-child(1) {
+    animation: ease .7s top-2 forwards;
+}
+
+.active span:nth-child(2) {
+    animation: ease .7s scaled forwards;
+}
+
+.not-active span:nth-child(2) {
+    animation: ease .7s scaled-2 forwards;
+}
+
+.active span:nth-child(3) {
+    animation: ease .7s bottom forwards;
+}
+
+.not-active span:nth-child(3) {
+    animation: ease .7s bottom-2 forwards;
+}
+
+@keyframes top {
+    0% {
+      top: 0;
+      transform: rotate(0);
+    }
+    50% {
+      top: 5px;
+      transform: rotate(0);
+    }
+    100% {
+      top: 5px;
+      transform: rotate(45deg);
+    }
+}
+
+  @keyframes top-2 {
+    0% {
+      top: 5px;
+      transform: rotate(45deg);
+    }
+    50% {
+      top: 5px;
+      transform: rotate(0deg);
+    }
+    100% {
+      top: 0;
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes bottom {
+    0% {
+      bottom: 0;
+      transform: rotate(0);
+    }
+    50% {
+      bottom: 22px;
+      transform: rotate(0);
+    }
+    100% {
+      bottom: 22px;
+      transform: rotate(135deg);
+    }
+  }
+
+  @keyframes bottom-2 {
+    0% {
+      bottom: 22px;
+      transform: rotate(135deg);
+    }
+    50% {
+      bottom: 22px;
+      transform: rotate(0);
+    }
+    100% {
+      bottom: 0;
+      transform: rotate(0);
+    }
+  }
+
+  @keyframes scaled {
+    50% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+
+  @keyframes scaled-2 {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @media (min-width: 1920px) {
+      .btn {
+          top: 7%;
+      }
+  }
+
+  @media (min-width: 1600px) {
+      .btn {
+          top: 7,5%;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .btn {
+          top: 6%;
+      }
+  }
+
+  @media (max-width: 1440px) {
+    .btn {
+        top: 7%;
+    }
+}
 
 /* ID Selectors -------------- */
 /* Type Selectors -------------- */
@@ -303,6 +536,7 @@ h1 {
 }
 
 h2 {
+    font-size: 3.5rem;
     font-family: "Teko";
     margin: 0;
     color: #02515E;
@@ -322,7 +556,7 @@ ul {
     list-style: none;
 }
 
-th, 
+th,
 td {
     height: 1.5rem;
     padding: 12px;

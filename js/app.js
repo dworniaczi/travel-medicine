@@ -28,3 +28,17 @@ $(document).ready(function(){
         );
     });
 });
+
+$(document).ready(function() {
+    $('.hamburger-icon').click(function() {
+        $('.navigation').slideToggle(300);
+    });
+});
+
+var btn = $('.btn');
+
+btn.on('click', function() {
+    $(this).toggleClass('active');
+    $(this).toggleClass('not-active');
+    $('.navigation').slideToggle(300);
+});
