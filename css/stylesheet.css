@@ -484,6 +484,35 @@ span + span {
     }
 }
 
+/* End of menu button style and animation */
+
+.tiles-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.country-container {
+    width: 128px;
+    height: 128px;
+    background-color:  #eae2db;
+    border: 2px solid #02515E;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.country {
+    font-family: 'Teko';
+    font-size: 30px;
+    text-align: center;
+    color: #02515E;
+    line-height: 30px;
+    cursor: pointer;
+}
+
 /* ID Selectors -------------- */
 /* Type Selectors -------------- */
 
