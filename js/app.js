@@ -27,3 +27,14 @@ btn.on('click', function() {
     $(this).toggleClass('not-active');
     $('.navigation').slideToggle(300);
 });
+
+$('.cube').hover(
+    function() {
+        $(this).removeClass("show-front");
+        $(this).addClass("show-right");
+    },
+    function() {
+        $(this).removeClass("show-right");
+        $(this).addClass("show-front");
+    }
+);

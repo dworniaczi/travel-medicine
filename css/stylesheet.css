@@ -493,7 +493,21 @@ span + span {
     justify-content: space-evenly;
 }
 
-.country-container {
+.cube {
+    width: 128px;
+    height: 128px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-64px);
+    transition: transform 0.7s;
+    cursor: pointer;
+}
+
+.cube.show-front  { transform: translateZ(-64px) rotateY(   0deg); }
+.cube.show-right  { transform: translateZ(-64px) rotateY( -90deg); }
+
+.cube-face {
+    position: absolute;
     width: 128px;
     height: 128px;
     background-color:  #eae2db;
@@ -503,6 +517,33 @@ span + span {
     justify-content: center;
     align-items: center;
 }
+
+.cube:nth-child(1) .cube-face-right:nth-child(2) {
+    background-image: url("../img/europe-hover.png");
+}
+
+.cube:nth-child(2) .cube-face-right:nth-child(2) {
+    background-image: url("../img/africa-hover.png");
+}
+
+.cube:nth-child(3) .cube-face-right:nth-child(2) {
+    background-image: url("../img/asia-hover.png");
+}
+
+.cube:nth-child(4) .cube-face-right:nth-child(2) {
+    background-image: url("../img/north-america-hover.png");
+}
+
+.cube:nth-child(5) .cube-face-right:nth-child(2) {
+    background-image: url("../img/south-america-hover.png");
+}
+
+.cube:nth-child(6) .cube-face-right:nth-child(2) {
+    background-image: url("../img/australia-hover.png");
+}
+
+.cube-face-front  { transform: rotateY(  0deg) translateZ(64px); }
+.cube-face-right  { transform: rotateY( 90deg) translateZ(64px); }
 
 .country {
     font-family: 'Teko';
