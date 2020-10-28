@@ -164,35 +164,6 @@
     padding-top: 50px;
 }
 
-.button-prices {
-    font-family: "Montserrat";
-    font-size: 18px;
-    font-weight: 700;
-    margin-left: auto;
-    margin-top: 50px;
-    margin-right: auto;
-    display: block;
-    padding: 0.35em 1.2em;
-    border: 2px solid #02515E;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: #02515E;
-    text-align: center;
-    transition: all 0.2s;
-    background-color: #eae2db;
-    cursor: pointer;
-}
-
-.button-prices:hover {
-    color: #eae2db;
-    background-color: #02515E;
-}
-
-.button-prices:focus {
-    outline: 0;
-}
-
 .container-certificate {
     display: none;
     padding-bottom: 80px;
@@ -363,7 +334,7 @@
     cursor: pointer;
 }
 
-span {
+.btn span {
     display: block;
     width: 100%;
     box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
