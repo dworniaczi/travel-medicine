@@ -154,6 +154,23 @@
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    border-collapse: collapse;
+}
+
+.table-prices-header,
+.table-prices-content {
+    height: 1.5rem;
+    padding: 12px;
+}
+
+.table-prices,
+.table-prices-header,
+.table-prices-content {
+    border: 2px solid #02515E;
+}
+
+.table-prices-header {
+    font-size: 1.25rem;
 }
 
 .vax-price {
@@ -515,6 +532,8 @@ span + span {
 
 .vac-table {
     width: 1200px;
+    border: 1px solid;
+    border-spacing: 0;
 }
 
 .rotated-header th {
@@ -532,6 +551,12 @@ span + span {
     width: 300px;
     transform-origin: bottom left;
     transform: translateX(20px) rotate(-58deg);
+    border: 1px solid;
+}
+
+.tg-0pky {
+    border: 1px solid;
+    border-collapse: collapse;
 }
 
 /* ID Selectors -------------- */
@@ -576,67 +601,3 @@ ul {
     padding: 0;
     list-style: none;
 }
-
-/* th,
-td {
-    height: 1.5rem;
-    padding: 12px;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-table,
-th,
-td
- {
-    border: 2px solid #02515E;
-}
-
-th {
-    font-size: 1.25rem;
-} */
-
-.table-prices {
-    border-collapse: collapse;
-}
-
-.table-prices-header,
-.table-prices-content {
-    height: 1.5rem;
-    padding: 12px;
-}
-
-.table-prices,
-.table-prices-header,
-.table-prices-content {
-    border: 2px solid #02515E;
-}
-
-.table-prices-header {
-    font-size: 1.25rem;
-}
-
-/* .container-table table {
-    border-collapse: collapse;
-}
-
-.container-table
-th,
-td {
-    height: 1.5rem;
-    padding: 12px;
-}
-
-.container-table
-table,
-th,
-td {
-    border: 2px solid #02515E;
-}
-
-.container-table
-th {
-    font-size: 1.25rem;
-} */
