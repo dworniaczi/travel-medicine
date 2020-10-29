@@ -577,7 +577,7 @@ ul {
     list-style: none;
 }
 
-th,
+/* th,
 td {
     height: 1.5rem;
     padding: 12px;
@@ -589,10 +589,54 @@ table {
 
 table,
 th,
-td {
+td
+ {
     border: 2px solid #02515E;
 }
 
 th {
     font-size: 1.25rem;
+} */
+
+.table-prices {
+    border-collapse: collapse;
 }
+
+.table-prices-header,
+.table-prices-content {
+    height: 1.5rem;
+    padding: 12px;
+}
+
+.table-prices,
+.table-prices-header,
+.table-prices-content {
+    border: 2px solid #02515E;
+}
+
+.table-prices-header {
+    font-size: 1.25rem;
+}
+
+/* .container-table table {
+    border-collapse: collapse;
+}
+
+.container-table
+th,
+td {
+    height: 1.5rem;
+    padding: 12px;
+}
+
+.container-table
+table,
+th,
+td {
+    border: 2px solid #02515E;
+}
+
+.container-table
+th {
+    font-size: 1.25rem;
+} */
