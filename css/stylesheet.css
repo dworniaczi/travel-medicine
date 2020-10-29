@@ -268,61 +268,6 @@
     margin-bottom: 32px;
 }
 
-.continent-icon {
-    display: inline-block;
-    height: 128px;
-    width: 128px;
-    margin: 0px 30px;
-}
-
-.europe-icon {
-    background-image: url("../img/europe.png");
-}
-
-.europe-icon:hover {
-    background-image: url("../img/europe-hover.png");
-}
-
-.africa-icon {
-    background-image: url("../img/africa.png");
-}
-
-.africa-icon:hover {
-    background-image: url("../img/africa-hover.png");
-}
-
-.asia-icon {
-    background-image: url("../img/asia.png");
-}
-
-.asia-icon:hover {
-    background-image: url("../img/asia-hover.png");
-}
-
-.australia-icon {
-    background-image: url("../img/australia.png");
-}
-
-.australia-icon:hover {
-    background-image: url("../img/australia-hover.png");
-}
-
-.south-america-icon {
-    background-image: url("../img/south-america.png");
-}
-
-.south-america-icon:hover {
-    background-image: url("../img/south-america-hover.png");
-}
-
-.north-america-icon {
-    background-image: url("../img/north-america.png");
-}
-
-.north-america-icon:hover {
-    background-image: url("../img/north-america-hover.png");
-}
-
 /* Menu button style and animation */
 
 .btn {
@@ -490,7 +435,7 @@ span + span {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .cube {
@@ -501,6 +446,7 @@ span + span {
     transform: translateZ(-64px);
     transition: transform 0.7s;
     cursor: pointer;
+    margin: 20px 40px;
 }
 
 .cube.show-front  { transform: translateZ(-64px) rotateY(   0deg); }
@@ -516,10 +462,14 @@ span + span {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .cube:nth-child(1) .cube-face-right:nth-child(2) {
     background-image: url("../img/europe-hover.png");
+
 }
 
 .cube:nth-child(2) .cube-face-right:nth-child(2) {
@@ -552,6 +502,36 @@ span + span {
     color: #02515E;
     line-height: 30px;
     cursor: pointer;
+}
+
+.vac-table-container {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 1rem "Montserrat";
+}
+
+.vac-table {
+    width: 1200px;
+}
+
+.rotated-header th {
+    height: 240px;
+    vertical-align: bottom;
+    text-align: left;
+    line-height: 1;
+}
+
+.rotated-header-container {
+    width: 75px;
+}
+
+.rotated-header-content {
+    width: 300px;
+    transform-origin: bottom left;
+    transform: translateX(20px) rotate(-58deg);
 }
 
 /* ID Selectors -------------- */
